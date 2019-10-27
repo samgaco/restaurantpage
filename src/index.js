@@ -1,4 +1,5 @@
 import about from './about.js'
+import './style.css'
 
 about.addtag("#content","レストラン");
 about.addimg("#content","./images/header.jpg")

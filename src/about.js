@@ -9,7 +9,7 @@ const about = (() => {
 
     const addimg = (select, url) => {
         var h = document.createElement("IMG");
-        h.setAttribute("src", url);
+        h.setAttribute("src", url); 
         h.setAttribute("width", "100%");
         h.setAttribute("height", "100%");
         h.setAttribute("alt", "sea");
