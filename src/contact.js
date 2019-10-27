@@ -1,7 +1,7 @@
 const contact = (() => {
 
     const addform = () => {
-        var x = document.getElementById("contact");
+        var x = document.getElementById("content");
         var createform = document.createElement('form'); // Create New Element Form
         createform.setAttribute("action", ""); // Setting Action Attribute on Form
         createform.setAttribute("method", "post"); // Setting Method Attribute on Form
@@ -70,6 +70,7 @@ const contact = (() => {
     }
 
     const render = () => {
+    document.getElementById("content").innerHTML = "";
     addform();
     }
 

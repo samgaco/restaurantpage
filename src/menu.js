@@ -7,26 +7,41 @@ const menu = (() => {
         document.querySelector(select).appendChild(h);
     };
 
+    const adddiv = (clase) => {
+        var h = document.createElement("DIV");
+        h.classList.add(clase);
+        document.querySelector("#content").appendChild(h);
+    };
+
     const addimg = (select, url) => {
         var h = document.createElement("IMG");
         h.setAttribute("src", url); 
-        h.setAttribute("width", "80%");
-        h.setAttribute("height", "80%");
+        h.setAttribute("width", "45%");
+        h.setAttribute("height", "45%");
         h.setAttribute("text-align", "center");
         h.setAttribute("alt", "sea");
         document.querySelector(select).appendChild(h);
     }
 
     const render = () => {
-    addtag("#menu-title", "H1", "私たちのメニュー");
-    addimg("#dish1", "./images/dish1.jpeg")
-    addtag("#dish1", "P", "Sushi arrangement 45$")
-    addimg("#dish2", "./images/dish1.jpeg")
-    addtag("#dish2", "P", "Sushi arrangement 45$")
-    addimg("#dish3", "./images/dish1.jpeg")
-    addtag("#dish3", "P", "Sushi arrangement 45$")
-    addimg("#dish4", "./images/dish1.jpeg")
-    addtag("#dish4", "P", "Sushi arrangement 45$")
+    document.getElementById("content").innerHTML = "";
+    addtag("#content", "H1", "私たちのメニュー");
+    adddiv("menu-row")
+
+    adddiv("left-menu1")
+    addimg(".left-menu1", "./images/dish1.jpeg")
+    addtag(".left-menu1", "P", "Sushi arrangement 45$")
+    adddiv("right-menu1")
+    addimg(".right-menu1", "./images/dish1.jpeg")
+    addtag(".right-menu1", "P", "Sushi arrangement 45$")
+
+    adddiv("menu-row2")
+    adddiv("left-menu2")
+    addimg(".left-menu2", "./images/dish1.jpeg")
+    addtag(".left-menu2", "P", "Sushi arrangement 45$")
+    adddiv("right-menu2")
+    addimg(".left-menu2", "./images/dish1.jpeg")
+    addtag(".left-menu2", "P", "Sushi arrangement 45$")
     }
 
     return{render};
