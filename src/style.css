@@ -11,7 +11,7 @@
   padding: 1rem 2rem;
   margin-right: 0.2rem;
   cursor: pointer;
-  background: #90caf9;
+  background:rgba(250, 109, 109, 0.6);
   font-weight: bold;
   transition:  ease 0.2s;
 }
@@ -21,13 +21,13 @@
   width: 100%;
   display: none;
   padding: 1rem;
-  background: #fff;
+  background: rgb(189, 189, 189,0.4);
 }
 .tabs input[type="radio"] {
   display: none;
 }
 .tabs input[type="radio"]:checked + label {
-  background: #fff;
+  background: rgb(189, 189, 189,0.4);
 }
 .tabs input[type="radio"]:checked + label + .tab {
   display: block;
@@ -49,7 +49,7 @@
  * Generic Styling
 */
 body {
-  background: #eee;
+  background: rgb(143, 72, 72);
   min-height: 100vh;
   box-sizing: border-box;
   padding-top: 10vh;
@@ -60,4 +60,68 @@ body {
   max-width: 60rem;
   margin: 0 auto;
   font-size: 112%;
+}
+
+
+/* about */
+
+#content{
+
+  align-content: center;
+  padding: 5% 15% 10% 15%;
+}
+
+/* menu */
+
+.menu-row{
+  display: flex;
+  flex-direction: row; 
+  margin: 10%;
+}
+
+#menu{
+  padding: 5% 15% 10% 15%;
+}
+
+
+/* form */
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea[name=dmessage], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: rgb(223, 106, 112);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #912937;
+}
+
+div {
+  border-radius: 5px;
+  padding: 20px;
 }

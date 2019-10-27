@@ -1,4 +1,4 @@
-const about = (() => {
+const menu = (() => {
 
     const addtag = (select, tag, text) => {
         var h = document.createElement(tag);
@@ -10,7 +10,7 @@ const about = (() => {
     const addimg = (select, url) => {
         var h = document.createElement("IMG");
         h.setAttribute("src", url); 
-        h.setAttribute("width", "40%");
+        h.setAttribute("width", "80%");
         h.setAttribute("height", "80%");
         h.setAttribute("text-align", "center");
         h.setAttribute("alt", "sea");
@@ -18,19 +18,19 @@ const about = (() => {
     }
 
     const render = () => {
-    addtag("#content", "H1", "レストラン");
-    addimg("#content", "./images/header.png")
-    addtag("#content", "P", "Our food is salty, sweet, sour, slightly bitter and full of umami flavors, and equal emphasis is placed on our beautiful presentations.");
-    addtag("#content", "P", "私たちの食べ物は、塩辛く、甘く、酸っぱく、わずかに苦く、うま味がいっぱいです。美しいプレゼンテーションにも同様に重点が置かれています。");
-
-
-}
+    addtag("#menu-title", "H1", "私たちのメニュー");
+    addimg("#dish1", "./images/dish1.jpeg")
+    addtag("#dish1", "P", "Sushi arrangement 45$")
+    addimg("#dish2", "./images/dish1.jpeg")
+    addtag("#dish2", "P", "Sushi arrangement 45$")
+    addimg("#dish3", "./images/dish1.jpeg")
+    addtag("#dish3", "P", "Sushi arrangement 45$")
+    addimg("#dish4", "./images/dish1.jpeg")
+    addtag("#dish4", "P", "Sushi arrangement 45$")
+    }
 
     return{render};
 
 })();
 
-export default about;
-
-
-
+export default menu;
