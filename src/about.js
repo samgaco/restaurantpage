@@ -1,3 +1,6 @@
+/* eslint-env browser */
+/* eslint no-unused-vars: [1, {"argsIgnorePattern": "evt"}] */
+
 const about = (() => {
   const addtag = (select, tag, text) => {
     const h = document.createElement(tag);

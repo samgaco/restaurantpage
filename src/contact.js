@@ -19,7 +19,6 @@ const contact = (() => {
     let linebreak = document.createElement('br');
     createform.appendChild(linebreak);
 
-    let linebreak = document.createElement('br');
     createform.appendChild(linebreak);
 
     const emaillabel = document.createElement('label'); // Create Label for E-mail Field
