@@ -1,3 +1,6 @@
+/* eslint-env browser */
+/* eslint no-unused-vars: [1, {"argsIgnorePattern": "evt"}] */
+
 import about from './about';
 import menu from './menu';
 import contact from './contact';
