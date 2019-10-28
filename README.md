@@ -1,6 +1,6 @@
 <br />
 <p align="center">
-  <a href="https://rawcdn.githack.com/samgaco/restaurantpage/b1ac7ab611028ca5c42a3c10ae72bce02b15f54a/dist/index.html">
+  <a href="https://rawcdn.githack.com/samgaco/restaurantpage/7f72b8d7982284f68027f185f8e13a3dcf326f94/dist/index.html">
     <img src="images/logo.png" alt="Logo">
   </a>
 
@@ -10,7 +10,7 @@
     JavaScript Project
     <br />
     <br />
-    <a href="https://rawcdn.githack.com/samgaco/restaurantpage/b1ac7ab611028ca5c42a3c10ae72bce02b15f54a/dist/index.html">View Demo</a>
+    <a href="https://rawcdn.githack.com/samgaco/restaurantpage/7f72b8d7982284f68027f185f8e13a3dcf326f94/dist/index.html">View Demo</a>
     ·
     <a href="https://github.com/samgaco/restaurantpage/issues">Report Bug</a>
     ·
@@ -32,7 +32,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-  <a href="#">
+  <a href="https://rawcdn.githack.com/samgaco/restaurantpage/7f72b8d7982284f68027f185f8e13a3dcf326f94/dist/index.html">
     <img src="images/restaurantmain.png" alt="Logo">
   </a>
 
