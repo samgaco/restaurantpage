@@ -6,16 +6,16 @@ module.exports = {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
   },
-  
+
   optimization: {
     splitChunks: {
-      chunks: 'all'
-    }
+      chunks: 'all',
+    },
   },
 
   devServer: {
-    contentBase: path.join(__dirname, "dist"),
-    port: 9000
+    contentBase: path.join(__dirname, 'dist'),
+    port: 9000,
   },
 
   module: {
@@ -26,28 +26,28 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env']
-          }
-        }
+            presets: ['@babel/preset-env'],
+          },
+        },
       },
 
       {
-      test: /\.css$/,
-      use: [
-        {loader: 'style-loader'},
-        {loader: 'css-loader'}
-      ]
+        test: /\.css$/,
+        use: [
+          { loader: 'style-loader' },
+          { loader: 'css-loader' },
+        ],
 
-    },
+      },
 
-    {
+      {
 
-      test: /\.(png|jpg)$/,
-      use: [
-        {loader: 'url-loader'}
-      ]
-    }
+        test: /\.(png|jpg)$/,
+        use: [
+          { loader: 'url-loader' },
+        ],
+      },
 
-    ]
-  }
+    ],
+  },
 };
