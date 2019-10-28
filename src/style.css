@@ -4,6 +4,10 @@
 .menu {
   display: flex;
   flex-wrap: wrap; 
+  flex-direction: column;
+  position: absolute;
+  right: 950px;
+  top: 58px;
 }
 button{
   order: 1; 
@@ -14,12 +18,16 @@ button{
   background:rgba(250, 109, 109, 0.6);
   font-weight: bold;
   transition:  ease 0.2s;
+  margin-bottom: 6%;
 }
 
 #content{
-  background: rgb(189, 189, 189,0.4);
+  background: rgb(189, 189, 189,0.6);
   width: 90%;
   margin-bottom: 5%;
+  padding: 5% 15% 10% 15%;
+  position: absolute;
+  top: 35px;
 }
 
 
@@ -39,6 +47,12 @@ button{
 */
 body {
   background: rgb(143, 72, 72);
+  background-image: url("./tori.jpg");
+  background-repeat: space;
+
+  background: rgb(143, 72, 72) url("./tori.jpg") 0 0 no-repeat;
+
+
   max-height: 20vh;
   box-sizing: border-box;
   padding-bottom: 10vh;
@@ -49,35 +63,22 @@ body {
   max-width: 60rem;
   margin: 0 auto;
   font-size: 112%;
+  position: relative;
 }
 
 
 /* about */
 
-#content{
-
-  align-content: center;
-  padding: 5% 15% 10% 15%;
-}
-
 /* menu */
 
 .menu-row{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row; 
-  width:20%;
-}
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 2%;
+  grid-column-gap: 2%;
 
-.menu-row2{
-  display: flex;
-  flex-direction: row-reverse; 
-}
 
-#content{
-  padding: 5% 15% 10% 15%;
 }
-
 
 /* form */
 

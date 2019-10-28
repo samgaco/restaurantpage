@@ -17,15 +17,6 @@ const contact = (() => {
         var linebreak = document.createElement('br');
         createform.appendChild(linebreak);
         
-        var namelabel = document.createElement('label'); // Create Label for Name Field
-        namelabel.innerHTML = "Your Name : "; // Set Field Labels
-        createform.appendChild(namelabel);
-        
-        var inputelement = document.createElement('input'); // Create Input Field for Name
-        inputelement.setAttribute("type", "text");
-        inputelement.setAttribute("name", "dname");
-        createform.appendChild(inputelement);
-        
         var linebreak = document.createElement('br');
         createform.appendChild(linebreak);
         
