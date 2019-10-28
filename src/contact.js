@@ -16,10 +16,10 @@ const contact = (() => {
     const line = document.createElement('hr'); // Giving Horizontal Row After Heading
     createform.appendChild(line);
 
-    var linebreak = document.createElement('br');
+    let linebreak = document.createElement('br');
     createform.appendChild(linebreak);
 
-    var linebreak = document.createElement('br');
+    let linebreak = document.createElement('br');
     createform.appendChild(linebreak);
 
     const emaillabel = document.createElement('label'); // Create Label for E-mail Field
