@@ -1,6 +1,6 @@
-import about from './about.js';
-import menu from './menu.js';
-import contact from './contact.js';
+import about from './about';
+import menu from './menu';
+import contact from './contact';
 import './style.css';
 
 about.render();
