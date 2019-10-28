@@ -1,10 +1,10 @@
 <br />
 <p align="center">
   <a href="#">
-    <img src="images/logolibrary.png" alt="Logo">
+    <img src="images/logo.png" alt="Logo">
   </a>
 
-  <h3 align="center">Library</h3>
+  <h3 align="center">Restaurant | レストラン </h3>
 
   <p align="center">
     JavaScript Project
