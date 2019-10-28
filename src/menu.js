@@ -9,11 +9,11 @@ const menu = (() => {
     document.querySelector(select).appendChild(h);
   };
 
-  const adddiv = (clase, add_to, boot) => {
+  const adddiv = (clase, addto, boot) => {
     const h = document.createElement('DIV');
     h.classList.add(clase);
     h.classList.add(boot);
-    document.querySelector(add_to).appendChild(h);
+    document.querySelector(addto).appendChild(h);
   };
 
   const addimg = (select, url) => {

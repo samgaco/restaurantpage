@@ -16,7 +16,7 @@ const contact = (() => {
     const line = document.createElement('hr'); // Giving Horizontal Row After Heading
     createform.appendChild(line);
 
-    let linebreak = document.createElement('br');
+    const linebreak = document.createElement('br');
     createform.appendChild(linebreak);
 
     createform.appendChild(linebreak);
@@ -49,16 +49,6 @@ const contact = (() => {
     submitelement.setAttribute('name', 'dsubmit');
     submitelement.setAttribute('value', 'Submit');
     createform.appendChild(submitelement);
-  };
-
-  const addimg = (select, url) => {
-    const h = document.createElement('IMG');
-    h.setAttribute('src', url);
-    h.setAttribute('width', '40%');
-    h.setAttribute('height', '80%');
-    h.setAttribute('text-align', 'center');
-    h.setAttribute('alt', 'sea');
-    document.querySelector(select).appendChild(h);
   };
 
   const render = () => {
