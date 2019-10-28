@@ -1,0 +1,123 @@
+/**
+ * Tabs
+ */
+.menu {
+  display: flex;
+  flex-wrap: wrap; 
+  flex-direction: column;
+  position: absolute;
+  right: 950px;
+  top: 58px;
+}
+button{
+  order: 1; 
+  display: block;
+  padding: 1rem 2rem;
+  margin-right: 0.2rem;
+  cursor: pointer;
+  background:rgba(250, 109, 109, 0.6);
+  font-weight: bold;
+  transition:  ease 0.2s;
+  margin-bottom: 6%;
+}
+
+#content{
+  background: rgb(189, 189, 189,0.6);
+  width: 90%;
+  margin-bottom: 5%;
+  padding: 5% 15% 10% 15%;
+  position: absolute;
+  top: 35px;
+}
+
+
+@media (max-width: 45em) {
+  button {
+    order: initial;
+  }
+  button {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
+}
+
+/**
+ * Generic Styling
+*/
+body {
+  background: rgb(143, 72, 72);
+  background-image: url("./tori.jpg");
+  background-repeat: space;
+
+  background: rgb(143, 72, 72) url("./tori.jpg") 0 0 no-repeat;
+
+
+  max-height: 20vh;
+  box-sizing: border-box;
+  padding-bottom: 10vh;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  max-width: 60rem;
+  margin: 0 auto;
+  font-size: 112%;
+  position: relative;
+}
+
+
+/* about */
+
+/* menu */
+
+.menu-row{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 2%;
+  grid-column-gap: 2%;
+
+
+}
+
+/* form */
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea[name=dmessage], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: rgb(223, 106, 112);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #912937;
+}
+
+div {
+  border-radius: 5px;
+  padding: 20px;
+}
